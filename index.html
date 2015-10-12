@@ -21,13 +21,27 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>We're in good shape.</h1>
+        <div class="col-md-10 col-md-offset-1">
+         	<h1 class="text-center">Welcome to the Housemates' Microblog</h1>
+         	<hr>
+         	<!-- Adding the form that later will be used to add new posts to the list using jQuery. -->
+			<form class="text-center" id="new-post">
+				<div class="form-group">
+    				<label for="examplePost">Enter new post here!</label>
+    				<input class="form-control" id="post" placeholder="Got something to share with your housemates?" autofocus>
+				</div>
+  				<div class="form-group">
+  					<!-- Replacing with a more stylish Boostrap button that provides extra visual weight -->
+					<button type="button" class="btn btn-primary">Click to post it!</button>
+    			</div>
+			</form>
+			<hr>
+			<!-- Adding an unorderded list element that will later be used for making a list of posts using HTML strings, JavaScript and jQuery (and Object Oriented Programming!) that render to the DOM. -->
+			<ul id="post-list">
+				<li> List Item Test </li>
+			</ul>
         </div>
       </div>
     </div>
-
-<p> just testing 1st commit </p>
-
   </body>
 </html>
