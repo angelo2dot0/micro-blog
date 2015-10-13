@@ -24,16 +24,20 @@ $(document).ready(function(){
 	// submit form for new post
 	$newPost.on('submit', function(event) {
 		event.preventDefault();
+
 		// create new post object based on data input in the form
 		var postItem = $('#post-item').val();
 		var postObject = {item: postItem};
 		console.log(postItem);
 		console.log(postObject);
+
 		// add new post object data into the array / model
 		postArray.push(postObject);
 		console.log(postArray);
+
 		// add new post object data into the page
 		$postList.append('<li class="post">' + postObject.item + '</li>');
+
 		// reset the form
 		$newPost[0].reset();
 		$('#post-item').focus();
@@ -42,4 +46,8 @@ $(document).ready(function(){
 	$postList.on('click', '.post', function() {
 		$(this).addClass('done');
 	});
+	// add tooltip bootstrap component
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+});
 });
