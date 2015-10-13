@@ -27,6 +27,8 @@ $(document).ready(function(){
 		// create new post object based on data input in the form
 		var postItem = $('#post-item').val();
 		var postObject = {item: postItem};
+		console.log(postItem);
+		console.log(postObject);
 		// add new post object data into the array / model
 		postArray.push(postObject);
 		console.log(postArray);
