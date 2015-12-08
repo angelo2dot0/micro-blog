@@ -4,6 +4,9 @@ $(document).ready(function(){
 
 	// code in here
 
+	// adds Parse - Backend as a Service
+	Parse.initialize("B846m7bZxMnYZUMr4sxUemEKat5DhU5xpxsUf07u","MJLITfjl3G4vPIdEsXRz6K0DfNZuYWxmbJM3pHZd");
+
 	// array / model to hold data and also contains seed data
 	var postArray = [
 		{item: "Wanna go see the Blue Angels this Sunday? Talk to Mary!"},
